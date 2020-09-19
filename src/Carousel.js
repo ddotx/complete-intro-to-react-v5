@@ -5,6 +5,12 @@ class Carousel extends React.Component {
     photos: [],
     active: 0
   };
+
+/*   constructor (props) {
+    super(props);
+    this.handleIndexClick = this.handleIndexClick.bind(this)
+  } */
+
   static getDerivedStateFromProps({ media }) {
     let photos = ["http://placecorgi.com/600/600"];
 

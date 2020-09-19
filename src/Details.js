@@ -1,13 +1,20 @@
-import React from "react";
-import pet from "@frontendmasters/pet";
-import { navigate } from "@reach/router";
 import Carousel from "./Carousel";
-import Modal from "./Modal";
 import ErrorBoundary from "./ErrorBoundary";
+import Modal from "./Modal";
+import React from "react";
 import ThemeContext from "./ThemeContext";
+import { navigate } from "@reach/router";
+import pet from "@frontendmasters/pet";
 
 class Details extends React.Component {
-  state = { loading: true, showModal: false };
+  /* constructor(props) {
+    super(props);
+
+    this.state = {
+      loading: true
+    };
+  } */
+  state = { loading: true, showModal: false }; // * babel-eslint
   componentDidMount() {
     pet
       .animal(this.props.id)
